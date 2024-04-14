@@ -4,120 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YANG YUN JU</title>
-    
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            position: relative; /* 让父容器设置为相对定位，以便子元素可以使用绝对定位 */
-            background-color: #fbebef;
-        }
-        header {
-            background-color:#f4c1d1; /* 淺粉色 */
-            color: #fff;
-            padding: 40px 30px; /* 上下各30px，左右各20px 的內邊距 */
-            display: flex;
-            align-items: center; /* 垂直居中 */
-            justify-content: space-between; /* 左右对齐 */
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* 添加阴影 */
-        }
-        h1 {
-            margin: 0; /* 清除預設的標題樣式 */
-        }
-        h1, nav a {
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 添加文字阴影 */
-        }
-        .box {
-            background-color:  #ff69b4; /* 粉色 */
-            padding: 10px 20px; /* 上下各10px，左右各20px 的內邊距 */
-            margin-right: auto; /* 將左邊的空間擠到最左邊 */
-            border-radius: 25px; /* 圆角 */
-        }
-        nav {
-            display: flex;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px; /* 增加水平方向上的内边距 */
-            margin-right: 20px; /* 为链接增加右边距 */
-            background-color: #F1ACC2; /* 设置背景颜色 */
-            border-radius: 20px; /* 圆角 */
-            
-        }
-        nav a:hover {
-            background-color: rgba(255, 255, 255, 0.3); /* 鼠标悬停时的背景颜色 */
-            border-radius: 5px; /* 圆角 */
-        }
-
-        .picture {
-            position: relative;
-            margin-left: 150px;
-            margin-top: 40px;
-            border: 10px solid #fff;
-            display: inline-block;
-        }
-
-        .overlay-image {
-            position: absolute;
-            top: 0;
-            right: 0;
-            transform: translate(50%, -50%) rotate(15deg); 
-            width: 80px;
-            height: auto;
-            z-index: 1;
-        }
-
-        
-        .information-box {
-            position: absolute;
-            top: 0;
-            left: calc(100% + 70px); /* 使用calc()函数来计算左偏移量，添加20px的额外间距 */
-            padding: 20px 40px;
-            background-color: #f4c1d1;
-            border-radius: 10px;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-
-        .information-text {
-            color: #ea5783;
-            font-weight: bold;
-            font-size:30px;
-        }
-
-        .content {
-            position: absolute;
-            top: 10;
-            left: calc(100% + 70px); 
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
+<header id="top">
     <div class="box">
         <h1>YANG YUN JU</h1>
     </div>
     <nav>
-        <a href="#">Information</a>
-        <a href="#">Certification</a>
-        <a href="#">Experiences</a>
+        <a href="#information">Information</a>
+        <a href="#certification">Certification</a>
+        <a href="#experiences">Experiences</a>
     </nav>
 </header>
 
-<div class="picture">
+<div class="picture" id="information">
     <!-- 主要照片 -->
-    <img src="IMG_0868.jpg" alt="YANG YUN JU's Photo" width="280" height="auto">
+    <img src="IMG_0868.jpg" alt="YANG YUN JU's Photo" width="350" height="auto">
     <!-- 叠加的照片 -->
     <img class="overlay-image" src="IMG_3013.PNG" alt="Overlay Photo">
     <div class="information-box">
-        <span class="information-text">Information</span>
+        <span class="accounting-text">Information</span>
+        <p><b>Birthday : </b>2004.03.31 </p>
+        <p><b>gmail : </b>ju.yn331@gmail.com</p>
+        <p><b>Current School : </b>Information Management Department Chung Yuan Christian University</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/_yj_u31_/" target="_blank">
+                <img src="instagram_icon.png" alt="Instagram" title="Instagram">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100007388804859&locale=zh_TW" target="_blank">
+                <img src="facebook_icon.png" alt="Facebook" title="Facebook">
+            </a>
+            <a href="https://line.me/ti/p/mYQpKdfHES" target="_blank">
+                <img src="line_icon.png" alt="Line" title="Line">
+            </a>
+        </div>
     </div>
 </div>
-<p>current school</p>
 
+<div class="separator"></div>
+
+<div class="icon-and-experience" id="certification">
+    <div class="icon">
+        <img src="IMG_3027.PNG" alt="certification Icon" width="84" height="64">
+    </div>
+    <div class="experience-content">
+        <h2 class="title-text_2">Certification</h2>
+    </div>
+</div>
+
+
+<!-- Accounting Certification Box -->
+<div class="certificates-box">
+    <div class="icon">
+        <img src="accounting_icon.png" alt="Accounting Icon" width="91" height="51">
+    </div>
+    <div class="accounting-content">
+        <h2 class="accounting-text">Accounting</h2>
+        <ul>
+            <li>Accounting Services - Manual Recording (Grade C)</li>
+            <li>Accounting Services - Information (Grade C)</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Computer Certification Box -->
+<div class="computer-certificates-box">
+    <div class="icon">
+        <img src="computer_icon.png" alt="Computer Icon" width="80" height="80">
+    </div>
+    <div class="computer-content">
+        <h2 class="computer-text">Computer</h2>
+        <ul>
+            <li>Computer Software Applications (Level B)</li>
+            <li>Computer Software Applications (Level C)</li>
+            <li>TQC-Computerized Chinese Typing Test (Advanced Level)</li>
+            <li>TQC-Computer Typing Certification (Practical Level)</li>
+        </ul>
+    </div>
+</div>
+
+<!-- English Certification Box -->
+<div class="certificates-box">
+    <div class="icon">
+        <img src="english_icon.png" alt="english Icon" width="70" height="70">
+    </div>
+    <div class="accounting-content">
+        <h2 class="accounting-text">English</h2>
+        <ul>
+            <li>TOEIC - 750 points</li>
+            <li>GEPT -  Intermediate Listening and Reading</li>
+        </ul>
+    </div>
+</div>
+
+<div class="separator"></div>
+
+<!-- Experiences Box -->
+<div class="icon-and-experience">
+    <div class="icon">
+        <img src="IMG_3026.PNG" alt="english Icon" width="80" height="70">
+    </div>
+    <div class="experience-content">
+        <h1 class="title-text_2">Experiences</h1>
+    </div>
+</div>
+<div class="experiences-box" id="experiences">
+    <div class="icon">
+        <img src="ntu.png" alt="NTU Icon" width="70" height="70">
+    </div>
+    <div class="computer-content">
+        <ul>
+            <li><span>National Taiwan University Python Programming</span> (112/7/17～ 112/7/28 ; 30 hours)</li>
+            <li><span>National Taiwan University Algorithm Practical Workshop</span> (112/9/16～112/11/4 ; 30 hours)</li>
+            <li><span>National Taiwan University SQL Server Data Analysis</span> (112/11/25～112/12/9 ; 12hours)</li>
+            <li><span>National Taiwan University Python Machine Learning for Beginners</span> (113/1/6～113/1/20 ; 12hours)</li>
+        </ul>
+        
+    </div>
+</div>
 </body>
-</html>
+</html>  
+
+
+
