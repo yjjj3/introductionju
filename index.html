@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YANG YUN JU</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
 
 <header id="top">
@@ -14,6 +16,7 @@
     </div>
     <nav>
         <a href="#information">Information</a>
+        <a href="#skills">Skills</a>
         <a href="#certification">Certification</a>
         <a href="#experiences">Experiences</a>
     </nav>
@@ -21,33 +24,62 @@
 
 <div class="picture" id="information">
     <!-- 主要照片 -->
-    <img src="IMG_0868.jpg" alt="YANG YUN JU's Photo" width="350" height="auto">
+    <img src="image/IMG_0868.jpg" alt="YANG YUN JU's Photo" width="350" height="auto">
     <!-- 叠加的照片 -->
-    <img class="overlay-image" src="IMG_3013.PNG" alt="Overlay Photo">
+    <img class="overlay-image" src="image/IMG_3013.PNG" alt="Overlay Photo">
     <div class="information-box">
         <span class="accounting-text">Information</span>
         <p><b>Birthday : </b>2004.03.31 </p>
         <p><b>gmail : </b>ju.yn331@gmail.com</p>
+        <p><b>Personality : </b>kind and optimistic</p>
+        <p><b>Slogan : </b>Miracles happen everyday</p>
         <p><b>Current School : </b>Information Management Department Chung Yuan Christian University</p>
-        <div class="social-icons">
+    <div class="social-icons">
             <a href="https://www.instagram.com/_yj_u31_/" target="_blank">
-                <img src="instagram_icon.png" alt="Instagram" title="Instagram">
+                <img src="image/instagram_icon.png" alt="Instagram" title="Instagram">
             </a>
             <a href="https://www.facebook.com/profile.php?id=100007388804859&locale=zh_TW" target="_blank">
-                <img src="facebook_icon.png" alt="Facebook" title="Facebook">
+                <img src="image/facebook_icon.png" alt="Facebook" title="Facebook">
             </a>
             <a href="https://line.me/ti/p/mYQpKdfHES" target="_blank">
-                <img src="line_icon.png" alt="Line" title="Line">
+                <img src="image/line_icon.png" alt="Line" title="Line">
             </a>
+            <a href="mailto:ju.yn331@gmail.com">
+                <img src="image/gmail_icon.png" alt="gmail" title="gmail">
+            </a>
+            
         </div>
     </div>
 </div>
 
 <div class="separator"></div>
 
+<div class="icon-and-experience" id="skills">
+    <div class="icon">
+        <img src="image/IMG_3014.png" alt="skill Icon" width="84" height="64">
+    </div>
+    <div class="experience-content">
+        <h2 class="title-text_2">Skills</h2>
+        <div class="progress">
+            <div class="skill" data-percent="83" data-name="Python"></div>
+            <div class="skill" data-percent="70" data-name="CSS"></div>
+            <div class="skill" data-percent="72" data-name="HTML"></div>
+            <div class="skill" data-percent="80" data-name="SQL"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="separator"></div>
+
 <div class="icon-and-experience" id="certification">
     <div class="icon">
-        <img src="IMG_3027.PNG" alt="certification Icon" width="84" height="64">
+        <img src="image/IMG_3027.PNG" alt="certification Icon" width="84" height="64">
     </div>
     <div class="experience-content">
         <h2 class="title-text_2">Certification</h2>
@@ -58,7 +90,7 @@
 <!-- Accounting Certification Box -->
 <div class="certificates-box">
     <div class="icon">
-        <img src="accounting_icon.png" alt="Accounting Icon" width="91" height="51">
+        <img src="image/accounting_icon.png" alt="Accounting Icon" width="91" height="51">
     </div>
     <div class="accounting-content">
         <h2 class="accounting-text">Accounting</h2>
@@ -72,7 +104,7 @@
 <!-- Computer Certification Box -->
 <div class="computer-certificates-box">
     <div class="icon">
-        <img src="computer_icon.png" alt="Computer Icon" width="80" height="80">
+        <img src="image/computer_icon.png" alt="Computer Icon" width="80" height="80">
     </div>
     <div class="computer-content">
         <h2 class="computer-text">Computer</h2>
@@ -88,7 +120,7 @@
 <!-- English Certification Box -->
 <div class="certificates-box">
     <div class="icon">
-        <img src="english_icon.png" alt="english Icon" width="70" height="70">
+        <img src="image/english_icon.png" alt="english Icon" width="70" height="70">
     </div>
     <div class="accounting-content">
         <h2 class="accounting-text">English</h2>
@@ -104,26 +136,56 @@
 <!-- Experiences Box -->
 <div class="icon-and-experience">
     <div class="icon">
-        <img src="IMG_3026.PNG" alt="english Icon" width="80" height="70">
+        <img src="image/IMG_3026.PNG" alt="english Icon" width="80" height="70">
     </div>
     <div class="experience-content">
         <h1 class="title-text_2">Experiences</h1>
     </div>
 </div>
-<div class="experiences-box" id="experiences">
+<div class="clean-box" id="experiences">
     <div class="icon">
-        <img src="ntu.png" alt="NTU Icon" width="70" height="70">
+        <img src="image/ntu.png" alt="NTU Icon" width="70" height="70">
     </div>
-    <div class="computer-content">
-        <ul>
-            <li><span>National Taiwan University Python Programming</span> (112/7/17～ 112/7/28 ; 30 hours)</li>
-            <li><span>National Taiwan University Algorithm Practical Workshop</span> (112/9/16～112/11/4 ; 30 hours)</li>
-            <li><span>National Taiwan University SQL Server Data Analysis</span> (112/11/25～112/12/9 ; 12hours)</li>
-            <li><span>National Taiwan University Python Machine Learning for Beginners</span> (113/1/6～113/1/20 ; 12hours)</li>
+    <div class="experience-description">
+        <ul class="ntu-list">
+            <h2>National Taiwan University courses</h2>
+            <li class="ntu-description"><span>Python Programming</span> (112/7/17～ 112/7/28 ; 30 hours)</li>
+            <li class="ntu-description"><span>SQL Server Data Analysis</span> (112/11/25～112/12/9 ; 12hours)</li>
+            <li class="ntu-description"><span>Algorithm Practical Workshop</span> (112/9/16～112/11/4 ; 30 hours)</li>
+            <li class="ntu-description"><span>Python Machine Learning for Beginners</span> (113/1/6～113/1/20 ; 12hours)</li>
         </ul>
-        
     </div>
 </div>
+
+
+<!-- Experiences with Image -->
+<div class="clean-box">
+    <!-- Left side: Image -->
+    <div class="experience-image">
+        <img src="image/IMG_3123.JPG" alt="clean-up Image" width="200" height="150">
+    </div>
+    
+    <!-- Right side: Description -->
+    <div class="experience-description">
+        <h2>Helping with community clean-up activities</h2>
+        <p>Date: 111/9/28</p>
+        <p>Description:It was a rewarding experience to contribute to the cleanliness and well-being of our community, while also raising awareness about environmental conservation.</p>
+    </div>
+</div>
+
+<div class="clean-box">
+    <!-- Left side: Image -->
+    <div class="experience-image">
+        <img src="image/IMG_1777.jpg" alt="mochi Image" width="180" height="240">
+    </div>
+    
+    <!-- Right side: Description -->
+    <div class="experience-description">
+        <h2>Selling Mochi</h2>
+        <p>Duration: One week</p>
+        <p>Description: Sold 25 boxes of mochi. My friends bought them from me via Instagram. Though it was tiring, the sense of achievement was great. Received positive feedback from everyone, which made me very happy.</p>    </div>
+</div>
+
 </body>
 </html>  
 
